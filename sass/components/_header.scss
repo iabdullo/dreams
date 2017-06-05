@@ -1,0 +1,22 @@
+.header {
+    position: fixed;
+    width: 100%;
+    transition: all 0.8s ease-in-out;
+    z-index: 2;
+
+    .logo {
+        .logo__image {
+            margin-top: -10px;
+            z-index: 2;
+
+            @include media-breakpoint-down(xs) {
+                margin-top: 0;
+                width: 75px;
+            }
+        }
+    }
+}
+
+.header-scroll {
+    background-color: rgba(116,115,117, 0.87);
+}

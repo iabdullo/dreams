@@ -1,0 +1,158 @@
+.footer {
+  background-color: #111111;
+  color: #fff;
+  padding-top: 70px;
+  padding-bottom: 20px;
+
+  .section-title {
+    color: #fff;
+    margin-top: 0;
+  }
+
+  .btn {
+    border-width: 2px;
+  }
+
+  .text-14 {
+    color: #fff;
+  }
+
+  .social {
+    font-family: 'NotoSans-Regular';
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0;
+  }
+
+  .social__item {
+    display: inline-block;
+    font-size: initial;
+    margin: 25px 0;
+    width: 50%;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: #676767;
+        transition: color 0.7s ease-in;
+      }
+    }
+
+
+    @include media-breakpoint-down(xs) {
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
+
+  .social__item:first-of-type:before {
+      @extend %icon;
+      content: '\f10B';
+      top: 9px;
+  }
+
+  .social__item:nth-of-type(2):before {
+      @extend %icon;
+      content: '\f0e0';
+      font-size: 29px;
+  }
+
+   .social__item:nth-of-type(3):before {
+      @extend %icon;
+      content: '\f099';
+      font-size: 29px;
+  }
+
+   .social__item:nth-of-type(4):before {
+      @extend %icon;
+      content: '\f09a';
+      font-size: 29px;
+  }
+
+   .social__item:nth-of-type(5):before {
+      @extend %icon;
+      content: '\f0d5';
+      font-size: 29px;
+  }
+
+   .social__item:last-of-type:before {
+      @extend %icon;
+      content: '\f231';
+      font-size: 29px;
+  }
+
+}
+
+.contact-form {
+  padding-top: 23px;
+
+  input, textarea {
+    border-radius: 5px;
+    border: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 22px;
+    padding: 20px;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+
+      &::-webkit-input-placeholder { 
+        color: #fff;
+      }
+
+      &::-moz-placeholder { 
+        color: #fff;
+      }
+      
+      &:-ms-input-placeholder {
+        color: #fff;
+      }
+      
+      &:-moz-placeholder { 
+        color: #fff;
+      }
+    }
+  }
+
+  textarea {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+  }
+
+  ::-webkit-input-placeholder { 
+    color: #bbbbbb;
+    font-size: 17px;
+  }
+
+  ::-moz-placeholder { 
+    color: #bbbbbb;
+    font-size: 17px;
+  }
+  
+  :-ms-input-placeholder {
+    color: #bbbbbb;
+    font-size: 17px;
+  }
+
+  :-moz-placeholder { 
+    color: #bbbbbb;
+    font-size: 17px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    .btn {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.copy-right {
+  border-top: 1px solid #fff;
+  margin-top: 50px;
+  text-align: center;
+}
